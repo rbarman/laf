@@ -14,6 +14,10 @@ services:
       - EXECUTOR=Local
     volumes:
       - ./dags:/usr/local/airflow/dags
+      - ./warehouse/source:/usr/local/airflow/warehouse/source
+      - ./warehouse/raw:/usr/local/airflow/warehouse/raw
+      - ./warehouse/final:/usr/local/airflow/warehouse/final
+      - ./warehouse/reports:/usr/local/airflow/warehouse/reports
     ports:
       - "8080:8080"
     command: webserver
