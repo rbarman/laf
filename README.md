@@ -14,7 +14,7 @@ An etl process using airflow on docker. (will add more buzzwords)
 
 # DAG representation
 
-![alt text][https://i.imgur.com/NHjZ87U.png]
+![alt text](https://i.imgur.com/NHjZ87U.png)
 
 * Three tasks:
 	* Extract
@@ -42,7 +42,7 @@ An etl process using airflow on docker. (will add more buzzwords)
 	* etl process will start
 	* files should be created in warehouse directories
 
-![alt text][https://i.imgur.com/SYUD12t.png]
+![alt text](https://i.imgur.com/SYUD12t.png)
 
 * docker-compose down
 
