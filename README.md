@@ -23,21 +23,29 @@ An etl process using airflow on docker. (will add more buzzwords)
  
 
 # Steps
-1) install Docker
+* install and run Docker desktop
 
-2) git clone https://github.com/rbarman/laf
+* git clone https://github.com/rbarman/laf
 
-3) python dags/etl.py
+* python dags/etl.py
 
-- this will create the necessary warehouse directories and a sample file
+	* this will create the necessary warehouse directories and a sample file
 
-4) docker-compose up -d
+* docker-compose up -d
 
-- this will run the docker-compose.yml and build images
+	* this will run the docker-compose.yml and build images
 
-5) Go to localhost:8080/
+* Go to localhost:8080/
 
-6) Turn *etl_dag* or manually trigger a run
+* Turn *etl_dag* or manually trigger a run
+		
+	* etl process will start
+	* files should be created in warehouse directories
+
+![alt text][https://i.imgur.com/SYUD12t.png]
+
+* docker-compose down
+
 
 # TODOs:
 
